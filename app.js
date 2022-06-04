@@ -21,6 +21,10 @@ const logger = winston.createLogger({
 
 app.use(express.static('dist'))
 
+app.get('/health', (req, res) => {
+  res.send('ok')
+})
+
 app.listen(PORT, () => {
   logger.info('server started on port 5000')
 })

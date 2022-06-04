@@ -32,5 +32,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "fso-pokedex-prod"
           heroku_email: "crypticspaghetti@protonmail.com"
+          branch: master
           healthcheck: "https://fso-pokedex-prod.herokuapp.com/health"
           checkstring: "ok"

@@ -35,3 +35,4 @@ jobs:
           branch: master
           healthcheck: "https://fso-pokedex-prod.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
